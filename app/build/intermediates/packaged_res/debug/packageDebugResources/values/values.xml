@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF272727</color>
+    <color name="grey">#ababab</color>
+    <color name="red">#E76160</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">projectmain01</string>
+    <string name="pic1">pic1</string>
+    <style name="Base.Theme.Projectmain01" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+    <style name="Theme.Projectmain01" parent="Base.Theme.Projectmain01"/>
+    <style name="textStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="textStyleBold" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
