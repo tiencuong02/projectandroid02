@@ -55,12 +55,12 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
                 .into(holder.pic);
         holder.plusItem.setOnClickListener(v -> {
             notifyDataSetChanged();
-            changeNumberItemsListener.Change();
+            changeNumberItemsListener.change();
         });
 
         holder.minusItem.setOnClickListener(v -> {
             notifyDataSetChanged();
-            changeNumberItemsListener.Change();
+            changeNumberItemsListener.change();
         });
 
     }

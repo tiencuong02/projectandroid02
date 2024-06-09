@@ -31,12 +31,12 @@ private ManagmentCart managmentCart;
         managmentCart = new ManagmentCart(this);
 
         initView();
-        getBundle();
+//        getBundle();
     }
 
     private void getBundle() {
         object=(PopularDomain) getIntent().getSerializableExtra("object");
-        int drawableResourceId=this.getResources().getIdentifier(object.getPicUrl(),"drawable",this.getPackageName());
+        int drawableResourceId=this.getResources().getIdentifier(object.getPicUrl(),getString(R.string.drawable),this.getPackageName());
 
         Glide.with(this)
                 .load(drawableResourceId)

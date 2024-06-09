@@ -43,7 +43,7 @@ public class CartActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
         adapter=new CartListAdapter(managmentCart.getListCart(), this, new ChangeNumberItemsListener() {
             @Override
-            public void Change() {
+            public void change() {
                 calcualteCart();
             }
         });
@@ -51,7 +51,7 @@ public class CartActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         if(managmentCart.getListCart().isEmpty()){
             emptyTxt.setVisibility(View.VISIBLE);
-            scrollView.setVisibility(View.GONE);
+            //scrollView.setVisibility(View.GONE);
         }else{
             emptyTxt.setVisibility(View.GONE);
             scrollView.setVisibility(View.VISIBLE);

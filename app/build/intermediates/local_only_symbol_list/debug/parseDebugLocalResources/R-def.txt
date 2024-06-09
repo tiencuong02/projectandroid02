@@ -129,6 +129,7 @@ layout viewholder_pop_list
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string drawable
 string pic1
 style Base.Theme.Projectmain01
 style Theme.Projectmain01
